@@ -1,0 +1,32 @@
+{
+  "locale": "fr",
+  "keybind": "ctrl+r",
+  "profileKeybind": "alt+r",
+  "capture": {
+    "type": "ffmpeg",
+    "inputFormat": "avfoundation",
+    "input": ":0",
+    "sampleRate": 16000,
+    "channels": 1,
+    "maxSeconds": 120,
+    "minBytes": 4096
+  },
+  "provider": {
+    "type": "mistral",
+    "model": "voxtral-mini-2602",
+    "apiKeyEnv": "MISTRAL_API_KEY",
+    "language": "fr"
+  },
+  "output": {
+    "appendTrailingSpace": true,
+    "submitOnStop": false,
+    "insertMethod": "auto",
+    "replacements": {}
+  },
+  "commands": {
+    "enabled": true,
+    "send": ["envoie", "envoie-le"],
+    "clear": ["efface", "oublie"],
+    "newline": ["nouvelle ligne"]
+  }
+}

@@ -1,0 +1,14 @@
+// Register OpenCode Voice STT in ~/.config/opencode/opencode.json(c).
+// The package exposes both entrypoints: the server plugin (transcribe_audio
+// tool) and the TUI plugin (dictation). Options are shared by both.
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugins": [
+    {
+      "package": "/absolute/path/to/opencode-voice-stt",
+      "options": {
+        "configPath": "~/.config/opencode/stt.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "opencode-voice-stt",
+  "version": "0.1.0",
+  "description": "Provider-agnostic speech-to-text for OpenCode: interactive voice dictation in the TUI and agent-callable audio file transcription.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgarrot/opencode-voice-stt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cgarrot/opencode-voice-stt/issues"
+  },
+  "homepage": "https://github.com/cgarrot/opencode-voice-stt#readme",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "speech-to-text",
+    "stt",
+    "dictation",
+    "voice",
+    "tui",
+    "mistral",
+    "voxtral",
+    "whisper",
+    "openai",
+    "deepgram",
+    "elevenlabs",
+    "gladia",
+    "assemblyai",
+    "soniox",
+    "groq"
+  ],
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.tsx"
+  },
+  "files": [
+    "src",
+    "index.ts",
+    "tui.tsx",
+    "examples",
+    "docs",
+    "tools",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "smoke": "bun scripts/smoke.ts",
+    "ci": "npm run check && npm test && npm run smoke"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.0.31"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.5.8",
+    "@opentui/solid": ">=0.5.8",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opentui/core": "^0.6.6",
+    "@opentui/solid": "^0.6.6",
+    "@types/node": "^24.0.0",
+    "solid-js": "^1.9.12",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

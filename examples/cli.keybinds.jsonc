@@ -1,0 +1,10 @@
+// CLI tweaks relevant to voice dictation in ~/.config/opencode/cli.json
+{
+  "keybinds": {
+    // Free ctrl+r for the dictation toggle (defaults to session.rename).
+    "session.rename": "none"
+    // You can also rebind the plugin commands directly once loaded:
+    // "voice-stt.toggle": "ctrl+r",
+    // "voice-stt.profile": "alt+r"
+  }
+}

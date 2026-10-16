@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+coverage/
+dist/
+*.local.json
+config.local.json
+.opencode/
+
+# Local env files (API keys)
+*.env
